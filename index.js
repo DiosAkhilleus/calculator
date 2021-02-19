@@ -12,7 +12,12 @@ function init () {
 function add () {
     let num1 = document.getElementById('register').innerHTML;
     let num2 = document.getElementById('numline').innerHTML;
-    let result = (+num1 + +num2).toFixed(3);
+    let result = +num1 + +num2;
+
+    if(result % 1 !== 0){
+        result.toFixed(3);
+    }
+
     let resString = result.toString();
 
     if(resString.length < 9){
@@ -40,7 +45,10 @@ function add () {
 function subtract () {
     let num1 = document.getElementById('register').innerHTML;
     let num2 = document.getElementById('numline').innerHTML;
-    let result = (+num1 - +num2).toFixed(3);
+    let result = +num1 - +num2;
+    if(result % 1 !== 0){
+        result.toFixed(3);
+    }
     let resString = result.toString();
     console.log(result);
     
@@ -73,7 +81,10 @@ function subtract () {
 function multiply () {
     let num1 = document.getElementById('register').innerHTML;
     let num2 = document.getElementById('numline').innerHTML;
-    let result = (+num1 * +num2).toFixed(3);
+    let result = +num1 * +num2;
+    if(result % 1 !== 0){
+        result = result.toFixed(3);
+    }
     let resString = result.toString();
     if(resString.length < 9){
         document.getElementById('register').innerHTML = result;
@@ -100,7 +111,11 @@ function multiply () {
 function divide () {
     let num1 = document.getElementById('register').innerHTML;
     let num2 = document.getElementById('numline').innerHTML;
-    let result = (+num1 / +num2).toFixed(3);
+    let result = +num1 / +num2;
+    console.log(result);
+    if(result % 1 !== 0){
+        result = result.toFixed(3);
+    }
     let resString = result.toString();
     if(resString.length < 9){
         document.getElementById('register').innerHTML = result;
