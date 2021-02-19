@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
 
+#title {
+    text-align:center;
+    transform: translateY(40px);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
 #calc-container {
     display:grid;
     grid-template-columns:repeat(4, 1fr);

@@ -12,12 +12,12 @@ function init () {
 function add () {
     let num1 = document.getElementById('register').innerHTML;
     let num2 = document.getElementById('numline').innerHTML;
-    let result = +num1 + +num2;
+    let result = (+num1 + +num2).toFixed(3);
     let resString = result.toString();
 
     if(resString.length < 9){
-        document.getElementById('register').innerHTML = '';
-        document.getElementById('numline').innerHTML = result;
+        document.getElementById('register').innerHTML = result;
+        document.getElementById('numline').innerHTML = '0';
         console.log(result);
     } if(resString.length >= 9) {
         document.getElementById('numline').innerHTML = 'OVERFLOW';
@@ -25,13 +25,13 @@ function add () {
     }
 
     if(result < 0){
-        document.getElementById('register').innerHTML = '';
-        document.getElementById('numline').innerHTML = result;
+        document.getElementById('register').innerHTML = result;
+        document.getElementById('numline').innerHTML = '0';
         console.log(result);
     }
 
     if(result == 0){
-        document.getElementById('register').innerHTML = '';
+        document.getElementById('register').innerHTML = result;
         document.getElementById('numline').innerHTML = '0';
         console.log(result);
     }
@@ -40,15 +40,15 @@ function add () {
 function subtract () {
     let num1 = document.getElementById('register').innerHTML;
     let num2 = document.getElementById('numline').innerHTML;
-    let result = +num1 - +num2;
+    let result = (+num1 - +num2).toFixed(3);
     let resString = result.toString();
     console.log(result);
     
 
     if(result > 0){
         if(resString.length < 9){
-            document.getElementById('register').innerHTML = '';
-            document.getElementById('numline').innerHTML = result;
+            document.getElementById('register').innerHTML = result;
+            document.getElementById('numline').innerHTML = '0';
             console.log(result);
         } if(resString.length >= 9) {
             document.getElementById('numline').innerHTML = 'OVERFLOW';
@@ -58,13 +58,13 @@ function subtract () {
 
     if(result < 0){
 
-        document.getElementById('register').innerHTML = '';
-        document.getElementById('numline').innerHTML = result;
+        document.getElementById('register').innerHTML = result;
+        document.getElementById('numline').innerHTML = '0';
         console.log(result);
     }
 
     if(result == 0){
-        document.getElementById('register').innerHTML = '';
+        document.getElementById('register').innerHTML = result;
         document.getElementById('numline').innerHTML = '0';
         console.log(result);
     }
@@ -73,11 +73,11 @@ function subtract () {
 function multiply () {
     let num1 = document.getElementById('register').innerHTML;
     let num2 = document.getElementById('numline').innerHTML;
-    let result = +num1 * +num2;
+    let result = (+num1 * +num2).toFixed(3);
     let resString = result.toString();
     if(resString.length < 9){
-        document.getElementById('register').innerHTML = '';
-        document.getElementById('numline').innerHTML = result;
+        document.getElementById('register').innerHTML = result;
+        document.getElementById('numline').innerHTML = '0';
         console.log(result);
     } if(resString.length >= 9) {
         document.getElementById('numline').innerHTML = 'OVERFLOW';
@@ -85,13 +85,13 @@ function multiply () {
     }
 
     if(result < 0){
-        document.getElementById('register').innerHTML = '';
-        document.getElementById('numline').innerHTML = result;
+        document.getElementById('register').innerHTML = result;
+        document.getElementById('numline').innerHTML = '0';
         console.log(result);
     }
 
     if(result == 0){
-        document.getElementById('register').innerHTML = '';
+        document.getElementById('register').innerHTML = result;
         document.getElementById('numline').innerHTML = '0';
         console.log(result);
     }
@@ -100,11 +100,11 @@ function multiply () {
 function divide () {
     let num1 = document.getElementById('register').innerHTML;
     let num2 = document.getElementById('numline').innerHTML;
-    let result = +num1 / +num2;
+    let result = (+num1 / +num2).toFixed(3);
     let resString = result.toString();
     if(resString.length < 9){
-        document.getElementById('register').innerHTML = '';
-        document.getElementById('numline').innerHTML = result;
+        document.getElementById('register').innerHTML = result;
+        document.getElementById('numline').innerHTML = '0';
         console.log(result);
     } if(resString.length >= 9) {
         document.getElementById('numline').innerHTML = 'OVERFLOW';
@@ -112,13 +112,13 @@ function divide () {
     }
 
     if(result < 0){
-        document.getElementById('register').innerHTML = '';
-        document.getElementById('numline').innerHTML = result;
+        document.getElementById('register').innerHTML = result;
+        document.getElementById('numline').innerHTML = '0';
         console.log(result);
     }
 
     if(result == 0){
-        document.getElementById('register').innerHTML = '';
+        document.getElementById('register').innerHTML = result;
         document.getElementById('numline').innerHTML = '0';
         console.log(result);
     }
