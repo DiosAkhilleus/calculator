@@ -14,10 +14,6 @@
     vertical-align: middle;
 }
 
-#button {
-    background-color:cadetblue;
-}
-
 #container {
     width:400px;
     height:500px;
@@ -50,11 +46,11 @@
     grid-template-columns:repeat(4, 1fr);
     gap:2px;
     padding:5px;
-    padding-bottom:10px;
+    padding-bottom:6px;
     cursor:pointer;
 }
 
-#num, #func {
+#num {
     background-color:black;
     border-radius:15px;
     color:white;
@@ -62,6 +58,18 @@
     vertical-align:middle;
     line-height:75px;
     font-size:40px;
+    font-family:'Orbitron', sans-serif;
+    user-select:none;
+}
+
+#func {
+    background-color:black;
+    border-radius:15px;
+    color:white;
+    text-align:center;
+    vertical-align:middle;
+    line-height:65px;
+    font-size:50px;
     font-family:'Orbitron', sans-serif;
     user-select:none;
 }
@@ -88,6 +96,10 @@
     font-size:25px;
     font-family:'Orbitron', sans-serif;
     user-select:none;
+}
+
+#enter:hover, #clear:hover {
+    background-color:rgb(80, 77, 77);
 }
 
 #num:hover, #func:hover, #equals:hover {
@@ -124,3 +136,4 @@
     font-family:'Orbitron', sans-serif;
     user-select:none;
 }
+
