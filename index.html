@@ -5,29 +5,30 @@
   <title>Calculator</title>
   <meta charset=“UTF-8”/>
 </head>
-<body onload="console.log('works')">
+<body onload='init()'>
 
   <div id='container'>
     <div id='screen'>
-      <div id='numline'>Hey</div>
+      <div id= 'register'></div>
+      <div id='numline'></div>
     </div>
     <div id='key-container'>
-      <div class='func'>+</div>
-      <div class='func'>-</div>
-      <div class='func'>X</div>
-      <div class='func'>/</div>
-      <div class='func'>%</div>
-      <div class='num' onclick="subtract(4, 1)">1</div>
-      <div class='num'>2</div>
-      <div class='num'>3</div>
-      <div class='num'>4</div>
-      <div class='num'>5</div>
-      <div class='num'>6</div>
-      <div class='num'>7</div>
-      <div class='num'>8</div>
-      <div class='num'>9</div>
-      <div class='num'>0</div>
-      <div class=equals>=</div>
+      <div id='func' onclick='add()'>+</div>
+      <div id='func' onclick='subtract()'>-</div>
+      <div id='func' onclick='multiply()'>X</div>
+      <div id='func' onclick='divide()'>/</div>
+      <div id='num' onclick='setNum.call(this)'>1</div>
+      <div id='num' onclick='setNum.call(this)'>2</div>
+      <div id='num' onclick='setNum.call(this)'>3</div>
+      <div id='num' onclick='setNum.call(this)'>4</div>
+      <div id='num' onclick='setNum.call(this)'>5</div>
+      <div id='num' onclick='setNum.call(this)'>6</div>
+      <div id='num' onclick='setNum.call(this)'>7</div>
+      <div id='num' onclick='setNum.call(this)'>8</div>
+      <div id='num' onclick='setNum.call(this)'>9</div>
+      <div id='num' onclick='setNum.call(this)'>0</div>
+      <div id='enter' onclick='setReg()'>enter</div>
+      <div id='clear' onclick='clr()'>clear</div>
     </div>
     
 
