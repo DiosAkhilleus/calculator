@@ -1,0 +1,17 @@
+#calc-container {
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    grid-template-rows:repeat(4, 1fr);
+    height:500px;
+    width:400px;
+    gap:5px;
+    margin:auto;
+    padding: 40px;
+    color:white;
+    text-align:center;
+    vertical-align: middle;
+}
+
+#button {
+    background-color:cadetblue;
+}
