@@ -9,9 +9,13 @@ Intending to program it with RPN (Reverse Polish Notation)
     
 Order of Operations:
     1. Type first number
+
     2. Press 'enter' (this sets the register to whatever number you previously entered)
+
     3. Type second number
+
     4. Choose operator
+    
     5. Result should display
 
 --DiosAkhilleus
