@@ -1,10 +1,10 @@
 # calculator
 
-Makin' a JS Calculator!
+JavaScript, HTML, CSS
 
 Should have all normal 4-function calculator abilities!
 
-Intending to program it with RPN (Reverse Polish Notation)
+Programmed for use with RPN (Reverse Polish Notation)
     - This works slightly differently than a normal 4-func calculator.
     
 Order of Operations:
